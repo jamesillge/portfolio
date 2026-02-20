@@ -33,7 +33,7 @@ function Header() {
     setTheme("light");
   };
 
-  console.log(theme);
+  const base = "/~jillge";
 
   return (
     <>
@@ -43,17 +43,17 @@ function Header() {
       >
         <div className="absolute bottom-0 left-0 md:relative md:flex md:flex-1">
           <NavIcon
-            path={theme === "dark" ? "/" : "/contact"}
+            path={theme === "dark" ? `${base}/` : `${base}/contact`}
             icon={theme === "light" ? logoBlack : logoWhite}
             alt="alien logo"
             onClick={toggleTheme}
           />
         </div>
         <div className="flex justify-center md:block">
-          <NavButton path="/" text="james illge" onClick={toggleLight} />
+          <NavButton path={`${base}/`} text="james illge" onClick={toggleLight} />
         </div>
         <div className="absolute right-0 bottom-0 justify-end md:relative md:flex md:flex-1">
-          <NavButton path="/info" text="info" onClick={toggleLight} />
+          <NavButton path={`${base}/info`} text="info" onClick={toggleLight} />
         </div>
       </nav>
     </>

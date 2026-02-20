@@ -7,14 +7,17 @@ import InfoPage from "./pages/InfoPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 
 function App() {
+
+  const base = "/~jillge";
+
   return (
     <>
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/info" element={<InfoPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path={`${base}/`} element={<HomePage />} />
+            <Route path={`${base}/info`} element={<InfoPage />} />
+            <Route path={`${base}/contact`} element={<ContactPage />} />
           </Routes>
         </Layout>
       </Router>
