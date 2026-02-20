@@ -3,7 +3,7 @@ function Footer() {
     <>
       <footer>
         <div className="my-3 flex h-fit w-full justify-center text-center md:my-5">
-          <p className="caption">james illge &copy; 2025</p>
+          <p className="caption">james illge &copy; 2026</p>
         </div>
       </footer>
     </>
