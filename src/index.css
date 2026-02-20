@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
+@theme {
+  --breakpoint-xs: 30rem;
+
+  --font-inter: Inter, sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+
+  @apply bg-white dark:bg-black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  @apply font-inter bg-transparent text-lg leading-none font-light text-black uppercase dark:bg-black dark:text-white;
+}
+
+.caption {
+  @apply text-sm md:text-lg;
+}
+
+.contact {
+  @apply text-sm lowercase md:text-lg;
+}
+
+.link {
+  @apply cursor-pointer hover:opacity-75;
+}
