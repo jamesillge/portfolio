@@ -8,9 +8,10 @@ import { useLocation } from "react-router";
 function Header() {
   const [theme, setTheme] = useState("light");
   const location = useLocation();
+  const base = "/~jillge";
 
   useEffect(() => {
-    if (location.pathname === "/contact") {
+    if (location.pathname === `${base}/contact`) {
       setTheme("dark");
     } else {
       setTheme("light");
@@ -32,8 +33,6 @@ function Header() {
   const toggleLight = () => {
     setTheme("light");
   };
-
-  const base = "/~jillge";
 
   return (
     <>
