@@ -50,7 +50,11 @@ function Header() {
           />
         </div>
         <div className="flex justify-center md:block">
-          <NavButton path={`${base}/`} text="james illge" onClick={toggleLight} />
+          <NavButton
+            path={`${base}/`}
+            text="james illge"
+            onClick={toggleLight}
+          />
         </div>
         <div className="absolute right-0 bottom-0 justify-end md:relative md:flex md:flex-1">
           <NavButton path={`${base}/info`} text="info" onClick={toggleLight} />

@@ -7,7 +7,6 @@ import InfoPage from "./pages/InfoPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 
 function App() {
-
   const base = "/~jillge";
 
   return (
